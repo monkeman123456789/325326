@@ -471,6 +471,21 @@ local Tab = Window:MakeTab({
 Tab:AddLabel("Developer: Ketone")
 Tab:AddLabel("Developer: NotOreoz")
 
+Tab:AddButton({
+	Name = "Copy Discord",
+	Callback = function()
+	    OrionLib:MakeNotification({
+	Name = "Discord",
+	Content = "Discord copied to clipboard",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+      		Synapse:CopyString([[
+https://discord.gg/KJA9CKJV5C
+]])()
+  	end    
+})
+
 spawn(function()
     while wait() do 
         CoolLabel:Set("Time: "..game.Lighting.TimeOfDay)
