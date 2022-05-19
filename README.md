@@ -302,9 +302,9 @@ Tab:AddButton({
             if v.Cockroach.Transparency == 0 then
             OldPos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Cockroach.CFrame
-            wait(0.2)
+            wait(1)
             fireclickdetector(v.Cockroach.ClickDetector)
-            wait(0.2)
+            wait(0.5)
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = OldPos
             break
             end
